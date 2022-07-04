@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "lib": ["dom",  "es2018"],
+    "strict": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "outDir": "out-tsc",
+    "rootDir": "./"
+  }
+  ,
+  "include": ["./src/**/*.ts"]
+}

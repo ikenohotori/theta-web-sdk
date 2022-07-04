@@ -1,0 +1,27 @@
+{
+  "name": "demoapp",
+  "version": "1.0.0",
+  "description": "ricoh-ls-sdk demo application",
+  "scripts": {
+    "build": "rimraf dist && tsc && rollup -c rollup.config.js",
+    "open": "concurrently \"node server.js\" \"open http://localhost:8000/index.html\"",
+    "fmt": "prettier --config .prettierrc --write \"src/*\" \"*.js\" \"*.html\" \"demo/*\""
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^2.0.1",        
+    "@ricoh-live-streaming-api/ricoh-ls-sdk": "github:ricoh-live-streaming-api/web-sdk",
+    "@types/jsdom": "^16.2.14",
+    "concurrently": "^7.0.0",
+    "deepmerge": "^4.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "kcors": "^2.2.2",
+    "koa": "^2.13.4",
+    "koa-better-serve": "^2.0.7",
+    "koa-bodyparser": "^4.3.0",
+    "koa-convert": "^2.0.0",
+    "koa-router": "^10.1.1",
+    "prettier": "^2.5.1",
+    "rollup": "^2.67.0",
+    "typescript": "^4.5.5"
+  }
+}
