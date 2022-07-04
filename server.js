@@ -45,4 +45,5 @@ app.use(koaConvert(koaCors()));
 app.use(router.routes());
 app.use(router.allowedMethods());
 app.use(serve("./dist", "/"));
-app.listen(8000);
+const PORT = process.env.PORT || 8000;
+app.listen(PORT);

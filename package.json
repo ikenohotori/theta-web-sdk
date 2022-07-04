@@ -1,11 +1,16 @@
 {
   "name": "demoapp",
+  "engines":{
+    "node": "18.4.0",
+    "npm":  "8.12.1"
+  },
   "version": "1.0.0",
   "description": "ricoh-ls-sdk demo application",
   "scripts": {
     "build": "rimraf dist && tsc && rollup -c rollup.config.js",
     "open": "concurrently \"node server.js\" \"open http://localhost:8000/index.html\"",
-    "fmt": "prettier --config .prettierrc --write \"src/*\" \"*.js\" \"*.html\" \"demo/*\""
+    "fmt": "prettier --config .prettierrc --write \"src/*\" \"*.js\" \"*.html\" \"demo/*\"",
+    "start":"node server.js"
   },
   "devDependencies": {
     "@open-wc/building-rollup": "^2.0.1",        
